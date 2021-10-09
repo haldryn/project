@@ -157,11 +157,9 @@ h1 {
 }
 
 .pantallaInfoUno {
-  position: relative;
+  position: absolute;
   margin: 500px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -170,34 +168,38 @@ h1 {
           justify-content: center;
   width: 50vw;
   height: 60vh;
+  
   background-color: white;
   -webkit-box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 36.5016px 29.2013px rgba(0, 0, 0, 0.0482987), 0px 17.7209px 14.1767px rgba(0, 0, 0, 0.0389404), 0px 8.6871px 6.94968px rgba(0, 0, 0, 0.0310596), 0px 3.43489px 2.74791px rgba(0, 0, 0, 0.0217013);
           box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 36.5016px 29.2013px rgba(0, 0, 0, 0.0482987), 0px 17.7209px 14.1767px rgba(0, 0, 0, 0.0389404), 0px 8.6871px 6.94968px rgba(0, 0, 0, 0.0310596), 0px 3.43489px 2.74791px rgba(0, 0, 0, 0.0217013);
+
+  z-index: 5;
+}
+
+.circuloImagen{
+  display: flex;
+
 }
 
 .pantallaInfoUno .circuloImagen {
   position: absolute;
   top: 12%;
   left: 4%;
-  width: 400px;
-  height: 400px;
+  width: 40%;
+  height: 80%;
   border-radius: 500px;
 }
 
-.pantallaInfoUno img {
-  position: absolute;
-  top: 2%;
-  left: 20%;
-  width: 250px;
-}
+
 
 .pantallaInfoUno .close {
+  position: absolute;
   width: 20px;
   top: 5%;
   left: 95%;
 }
 
-.pantallaInfoUno p {
+/* .pantallaInfoUno p {
   position: absolute;
   left: 50%;
   width: 300px;
@@ -208,7 +210,7 @@ h1 {
   top: 35%;
   left: 50%;
   width: 400px;
-}
+} */
 
 @media screen and (max-width: 1440px) {
   .cuadros {
@@ -309,4 +311,51 @@ h1 {
   .pantallaInfoUno img {
     left: 2%;
   }
+}
+
+
+
+/****NUEVO CSS****/
+
+.fondoInfo{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  z-index: 3;
+  background-color: rgba(3, 3, 3, 0.452);
+}
+
+.close{
+  cursor: pointer;
+}
+
+#imgPantallaInfo { 
+  margin: auto;
+  width: 100%;
+  max-height: 100%;
+}
+
+#titPantallaInfo{
+  vertical-align: middle;
+  margin-bottom: 1em;
+}
+#textPantallaInfo{
+  vertical-align: middle;
+}
+
+.textosInfo {
+  position: absolute;
+  top: 12%;
+  right: 4%;
+  width: 40%;
+  height: 80%;
+  border-radius: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
