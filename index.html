@@ -19,65 +19,38 @@
       <section class="cuadroUno">
         <h2>LABORATORI QUÍMIC</h2>
         <div class="imagenes">
-          <div class="button"><img src="./imagen/1.Producto Quimico.svg" alt="" /></div>
-          <div class="button"><img src="./imagen/2.Solución patrón.svg" alt="" /></div>
+          <div id="img1" class="button"><img src="./imagen/1.Producto Quimico.svg" alt="" /></div>
+          <div id="img2" class="button"><img src="./imagen/2.Solución patrón.svg" alt="" /></div>
         </div>
       </section>
       <section class="cuadroDos">
         <h2>LABORATORI FISIC</h2>
         <div class="imagenesDos">
-        <div class="button"><img src="./imagen/3.Balanza.svg" alt="" /></div>
-        <div class="button"><img src="./imagen/4_Resistencia.svg" alt="" /></div>
-        <div class="button"><img src="./imagen/5_Lente.svg" alt="" /></div>
+        <div id="img3" class="button"><img src="./imagen/3.Balanza.svg" alt="" /></div>
+        <div id="img4" class="button"><img src="./imagen/4_Resistencia.svg" alt="" /></div>
+        <div id="img5" class="button"><img src="./imagen/5_Lente.svg" alt="" /></div>
         </div>
       </section>
     <div class="barra"></div>
     <!--pantallas info -->
     <div class="pantallaInfoUno">
       <div class="circuloImagen">
-      <img src="./imagen/1.Producto Quimico.svg" alt="" />
-    </div>
+          <img id="imgPantallaInfo" src="./imagen/1.Producto Quimico.svg" alt="" />
+      </div>
       <!--icono de cierre-->
+      <div class="textosInfo">
+        <div>
+          <h2 id="titPantallaInfo"></h2>
+          <p id="textPantallaInfo"></p>
+        </div>
+      </div>
       <img src="./imagen/Close.svg" alt="icono cerrar" class="close" />
-      <h2>Producte químic</h2>
-      <p>
-        Substància de la qual es coneixen la composició i altres valors, com la puresa, la densitat, la concentració, etc.
-      </p>
-    </div>
-    <div class="2">
-      <img src="./imagen/2.Solución patrón.svg" alt=""  />
-      <h2>Solució patró</h2>
-      <p>
-        Solució preparada de la qual es coneixen amb exactitud valors com la concentració, l’acidesa, etc. Es fa servir com a referència per determinar les característiques d’altres solucions.
-
-      </p>
-
     </div>
 
-    <div class="3">
-      <img src="./imagen/3.Balanza.svg" alt=""  />
-      <h2>Pes</h2>
-      <p>
-        Peça metàl·lica la massa de la qual és constant i coneguda, i que, per comparació, serveix per determinar la massa d’altres cossos en una balança de braços. També s’usa per calibrar les balances digitals
-      </p>
-
-    </div>
-    <div class="4">
-      <img src="./imagen/4_Resistencia.svg" alt=""  />
-      <h2>Resistència</h2>
-      <p>
-        Element que s’intercala en un circuit i modifica el pas del corrent elèctric segons un valor indicat.
-      </p>
-
-    </div>
-    <div class="5">
-      <img src="./imagen/5_Lente.svg" alt=""  />
-      <h2>Lent</h2>
-      <p>
-        Cristall transparent, amb forma i potència (en diòptries) conegudes, que serveix per desviar raigs de llum.
-      </p>
-
-    </div>
-
+    <div class="fondoInfo"></div>
   </body>
 </html>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.13.0-rc.2/jquery-ui.min.js" integrity="sha256-RQLbEU539dpygNMsBGZlplus6CkitaLy0btTCHcULpI=" crossorigin="anonymous"></script>
+<script src="scripts/example.js"></script>
